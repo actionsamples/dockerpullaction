@@ -37,8 +37,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: SYNC
         run: |
-             docker pull k8s.gcr.io/ingress-nginx/controller:v1.0.4
+             docker pull k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.1.1
              docker images
-             docker tag k8s.gcr.io/ingress-nginx/controller:v1.0.4 registry.cn-shanghai.aliyuncs.com/troncelltools/ingress-nginx-controller:v1.0.4
-             docker push registry.cn-shanghai.aliyuncs.com/troncelltools/ingress-nginx-controller:v1.0.4
+             docker tag k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.1.1 registry.cn-shanghai.aliyuncs.com/troncelltools/ingress-nginx-kube-webhook-certgen:v1.1.1
+             docker push registry.cn-shanghai.aliyuncs.com/troncelltools/ingress-nginx-kube-webhook-certgen:v1.1.1
              
