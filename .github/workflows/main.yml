@@ -39,6 +39,6 @@ jobs:
         run: |
              docker pull k8s.gcr.io/ingress-nginx/controller:v1.0.4
              docker images
-             docker tag k8s.gcr.io/ingress-nginx/controller: registry.cn-shanghai.aliyuncs.com/troncelltools/ingress-nginx-controller:v1.0.4
+             docker tag k8s.gcr.io/ingress-nginx/controller:v1.0.4 registry.cn-shanghai.aliyuncs.com/troncelltools/ingress-nginx-controller:v1.0.4
              docker push registry.cn-shanghai.aliyuncs.com/troncelltools/ingress-nginx-controller:v1.0.4
              
